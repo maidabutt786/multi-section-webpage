@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Interactive multi-section showcase page demonstrating advanced HTML/CSS techniques">
+        <title>Advanced Custom Showcase</title>
+        <link rel="stylesheet" href="taskstyle.css">
+        <script src="taskscript.js" defer></script>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <header class="primary-header">
+            <div class="container">
+                <nav class="primary-navigation" aria-label="Main navigation">
+                    <a href="#" class="logo" aria-label="Home page">
+                        <span aria-hidden="true">Multi-section Webpage</span>
+                    </a>
+                    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                        <span class="hamburger" aria-hidden="true"></span>
+                        <span class="visually-hidden">Menu</span>
+                    </button>
+                    <ul id="primary-navigation" class="nav-list" data-visible="false">
+                        <li>
+                            <a href="#features" class="nav-link">Features</a>
+                        </li>
+                        <li>
+                            <a href="#gallery" class="nav-link">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" class="nav-link">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main-content">
+            <section class="hero" aria-labelledby="hero-heading">
+                <div class="container grid">
+                    <div class="hero-content flow">
+                        <h1 id="hero-heading">Interactive Multi-Section Showcase</h1>
+                        <p class="hero-text">A demonstration of advanced HTML and CSS techniques with accessible interactive components</p>
+                        <div class="flex">
+                            <a href="#features" class="cta-button">Explore Features</a>
+                            <a href="#contact" class="cta-button secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="features" class="features-section" aria-labelledby="features-heading">
+                <div class="container">
+                    <header class="section-header">
+                        <h2 id="features-heading">Key Features</h2>
+                        <p class="section-subtitle">Discover what makes our showcase special</p>
+                    </header>
+                    <div class="features-grid grid">
+                        <article class="feature-card">
+                            <div class="feature-icon" aria-hidden="true">📱</div>
+                            <h3>Responsive Design</h3>
+                            <p>Fully responsive layouts that adapt to any screen size using modern CSS techniques.</p>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon" aria-hidden="true">⚡</div>
+                            <h3>Performance Optimized</h3>
+                            <p>Optimized assets and efficient code for lightning-fast loading times.</p>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon" aria-hidden="true">♿</div>
+                            <h3>Accessibility Focused</h3>
+                            <p>Built with accessibility in mind, following WCAG guidelines.</p>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon" aria-hidden="true">🎨</div>
+                            <h3>Modern Animations</h3>
+                            <p>Subtle animations and transitions to enhance user experience.</p>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon" aria-hidden="true">🔍</div>
+                            <h3>Semantic HTML</h3>
+                            <p>Proper semantic structure for better SEO and maintainability.</p>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon" aria-hidden="true">🧩</div>
+                            <h3>Modular Components</h3>
+                            <p>Reusable components with clean CSS architecture.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="gallery" class="gallery-section" aria-labelledby="gallery-heading">
+                <div class="container">
+                    <header class="section-header">
+                        <h2 id="gallery-heading">Project Gallery</h2>
+                        <p class="section-subtitle">View our interactive image showcase</p>
+                    </header>
+                    <div class="tabs-container">
+                        <div class="tablist" role="tablist" aria-label="Gallery categories">
+                            <button
+                                class="tab-button active"
+                                role="tab"
+                                aria-selected="true"
+                                aria-controls="web-tab"
+                                id="web"
+                            >
+                                Web Design
+                            </button>
+                            <button
+                                class="tab-button"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="mobile-tab"
+                                id="mobile"
+                                tabindex="-1"
+                            >
+                                Mobile Apps
+                            </button>
+                            <button
+                                class="tab-button"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="graphic-tab"
+                                id="graphic"
+                                tabindex="-1"
+                            >
+                                Graphic Design
+                            </button>
+                        </div>
+                        <div
+                            id="web-tab"
+                            role="tabpanel"
+                            aria-labelledby="web"
+                            class="tab-panel active"
+                        >
+                            <div class="gallery-grid">
+                                <figure class="gallery-item">
+                                    <img src="assets/e-commerce web img.png" alt="Modern website design with vibrant colors" loading="lazy">
+                                    <figcaption>E-commerce Website</figcaption>
+                                </figure>
+                                <figure class="gallery-item">
+                                    <img src="assets/webDesignImg.png" alt="Clean corporate website layout" loading="lazy">
+                                    <figcaption>Corporate Portal</figcaption>
+                                </figure>
+                                <figure class="gallery-item">
+                                    <img src="assets/portfolio img.png" alt="Creative portfolio website" loading="lazy">
+                                    <figcaption>Artist Portfolio</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div
+                            id="mobile-tab"
+                            role="tabpanel"
+                            aria-labelledby="mobile"
+                            class="tab-panel"
+                            hidden
+                        >
+                            <div class="gallery-grid">
+                                <figure class="gallery-item">
+                                    <img src="assets/fitness app img.png" alt="Fitness tracking mobile app" loading="lazy">
+                                    <figcaption>Fitness Tracker</figcaption>
+                                </figure>
+                                <figure class="gallery-item">
+                                    <img src="assets/foodDelivery img.png" alt="Food delivery app interface" loading="lazy">
+                                    <figcaption>Food Delivery</figcaption>
+                                </figure>
+                                <figure class="gallery-item">
+                                    <img src="assets/Socialmedia app img.png" alt="Social media app design" loading="lazy">
+                                    <figcaption>Social Network</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div
+                            id="graphic-tab"
+                            role="tabpanel"
+                            aria-labelledby="graphic"
+                            class="tab-panel"
+                            hidden
+                        >
+                            <div class="gallery-grid">
+                                <figure class="gallery-item">
+                                    <img src="assets/graphic img 1.png" alt="Brand identity design" loading="lazy">
+                                    <figcaption>Brand Identity</figcaption>
+                                </figure>
+                                <figure class="gallery-item">
+                                    <img src="assets/graphic img 2.png" alt="Poster design" loading="lazy">
+                                    <figcaption>Marketing Poster</figcaption>
+                                </figure>
+                                <figure class="gallery-item">
+                                    <img src="assets/graphic img 3.png" alt="Packaging design" loading="lazy">
+                                    <figcaption>Product Packaging</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-heading">
+                <div class="container">
+                    <header class="section-header">
+                        <h2 id="testimonials-heading">Client Testimonials</h2>
+                        <p class="section-subtitle">What our clients say about our work</p>
+                    </header>
+                    <div class="testimonials-grid grid">
+                        <article class="testimonial-card">
+                            <blockquote>
+                                <p>"The team delivered an exceptional website that perfectly represents our brand."</p>
+                                <footer>
+                                    <div class="author">
+                                        <img
+                                            src="assets/client img 1.png"
+                                            alt="Sarah Johnson"
+                                            loading="lazy"
+                                            width="60"
+                                            height="60"
+                                        >
+                                        <div>
+                                            <p class="author-name">Sarah Johnson</p>
+                                            <p class="author-role">Marketing Director</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </article>
+                        <article class="testimonial-card">
+                            <blockquote>
+                                <p>"Our mobile app engagement increased by 200% after their redesign."</p>
+                                <footer>
+                                    <div class="author">
+                                        <img
+                                            src="assets/client img 2.png"
+                                            alt="Michael Chen"
+                                            loading="lazy"
+                                            width="60"
+                                            height="60"
+                                        >
+                                        <div>
+                                            <p class="author-name">Michael Chen</p>
+                                            <p class="author-role">CEO, TechStart</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </article>
+                        <article class="testimonial-card">
+                            <blockquote>
+                                <p>"Accessibility improvements made our platform usable for all customers."</p>
+                                <footer>
+                                    <div class="author">
+                                        <img
+                                            src="assets/client img 3.png"
+                                            alt="Emma Rodriguez"
+                                            loading="lazy"
+                                            width="60"
+                                            height="60"
+                                        >
+                                        <div>
+                                            <p class="author-name">Emma Rodriguez</p>
+                                            <p class="author-role">Product Manager</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+                <div class="container grid">
+                    <div class="contact-content">
+                        <header class="section-header">
+                            <h2 id="contact-heading">Get In Touch</h2>
+                            <p class="section-subtitle">Ready to start your project?</p>
+                        </header>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <address>
+                            <h3>Our Office</h3>
+                            <p>
+                                123 Web Design Street
+                                <br>
+                                Digital City, WD 10101
+                            </p>
+                            <h3>Contact Info</h3>
+                            <p>
+                                <a href="mailto:info@showcase.example">info@showcase.example</a>
+                                <br>
+                                <a href="tel:+1234567890">(123) 456-7890</a>
+                            </p>
+                        </address>
+                        <div class="social-links">
+                            <h3>Follow Us</h3>
+                            <ul class="flex">
+                                <li>
+                                    <a
+                                        href="https://twitter.com/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        aria-label="Twitter"
+                                    >
+                                        <!-- Twitter SVG -->
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M22.46 5.924c-.793.352-1.645.59-2.54.698a4.48 4.48 0 0 0 1.963-2.475 8.94 8.94 0 0 1-2.828 1.082A4.48 4.48 0 0 0 16.11 4c-2.485 0-4.5 2.014-4.5 4.5 0 .353.04.697.116 1.027C7.728 9.37 4.1 7.6 1.67 4.905a4.49 4.49 0 0 0-.61 2.263c0 1.563.796 2.944 2.008 3.755a4.48 4.48 0 0 1-2.037-.563v.057c0 2.183 1.553 4.004 3.617 4.42a4.5 4.5 0 0 1-2.03.077c.573 1.788 2.24 3.09 4.215 3.125A9.01 9.01 0 0 1 2 19.54a12.73 12.73 0 0 0 6.92 2.03c8.303 0 12.85-6.876 12.85-12.844 0-.196-.004-.392-.013-.586A9.22 9.22 0 0 0 24 4.59a8.98 8.98 0 0 1-2.54.698z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://instagram.com/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        aria-label="Instagram"
+                                    >
+                                        <!-- Instagram SVG -->
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.242-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.567 5.783 2.295 7.15 2.233 8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.77.13 4.665.388 3.678 1.375 2.69 2.363 2.433 3.468 2.375 4.75.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.058 1.282.315 2.387 1.303 3.375.988.988 2.093 1.245 3.375 1.303C8.332 23.987 8.741 24 12 24c3.259 0 3.668-.013 4.948-.072 1.282-.058 2.387-.315 3.375-1.303.988-.988 1.245-2.093 1.303-3.375.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.058-1.282-.315-2.387-1.303-3.375-.988-.988-2.093-1.245-3.375-1.303C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://linkedin.com/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        aria-label="LinkedIn"
+                                    >
+                                        <!-- LinkedIn SVG -->
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://github.com/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        aria-label="GitHub"
+                                    >
+                                        <!-- GitHub SVG -->
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.304-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.625-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="primary-footer">
+            <div class="container grid">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">Showcase</a>
+                    <p>Demonstrating advanced web development techniques with a focus on accessibility and performance.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-legal">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="#">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>
+                        <!-- Remove this from your .hero section -->
+                        <div class="hero-image">
+                            <picture>
+                                <source srcset="assets/hero-image-large.jpg" media="(min-width: 1200px)">
+                                <source srcset="assets/hero-image-medium.jpg" media="(min-width: 768px)">
+                                <img src="assets/hero-image-small.jpg" alt="Abstract design showcasing web development elements" loading="lazy">
+                            </picture>
+                        </div>
+                        &copy;
+                        <span id="year"></span>
+                        Advanced Custom Showcase. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
